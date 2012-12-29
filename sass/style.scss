@@ -1,0 +1,385 @@
+// Here's where we define some default constants
+@import "compass/reset";
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #f8f8f8;
+  -webkit-font-smoothing: antialiased;
+}
+
+$grey: #535353;
+
+#home {
+  width:50%;
+  margin: 15% auto 0 auto;
+}
+#home img {
+  margin: 0 auto;
+  width: 135px;
+  display: block;
+}
+h1 {
+  font-size: 21px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height:1.4;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+h2 {
+  font-size: 42px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height:1.4;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+ul#nav {
+  margin: 25px auto 0 auto;
+}
+
+ul#nav li {
+  line-height: 3em;
+  text-align: center;
+}
+
+ul#nav li a {
+  font-family: "adobe-caslon-pro";
+  font-size: 25px;
+  color: $grey;
+  text-decoration:none;
+
+}
+ul#nav li a:active {
+  top: 2px;
+  position: relative;
+}
+.divider {
+  height: 1px;
+  width: 30%;
+  margin: 5% auto 0 auto;
+  background: url(../img/divider.png);
+}
+
+#top, #bottom, #left, #right {
+  background: #cee2ad;
+  position: fixed;
+  z-index: 300;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+
+/*----------------------------------
+---ABOUT MOB -----------------------
+----------------------------------*/
+#viewport {
+  position: relative;
+  display: block;
+  min-height: 500px;
+}
+#viewport-container {
+  width: 80%;
+  max-width: 1100px;
+  margin:0 auto;
+}
+.recently, .values, .skills {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+}
+.values, .skills {
+  left: 2000px;
+}
+
+#about {
+  margin: 1000px auto 0px auto;
+  padding: 50px 0px 0px 0px;
+}
+.about_container {
+  width: 80%;
+  margin: 0 auto;
+}
+#about h1 {
+  font-size: 42px;
+}
+
+#about #subnav {
+  margin: 15px auto 25px auto;
+  width: 100%;
+  text-align: center;
+}
+
+#about #subnav li {
+  display:inline;
+  text-align: center;
+}
+#about #subnav li a {
+  font-family: "adobe-caslon-pro";
+  color: #93b957;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0px 15px 0px 15px;
+  padding:185px 0 0 0;
+}
+
+#about #subnav li a#abvalues {
+  margin: 0px 19px 0px 15px; 
+
+}
+#about #subnav li a.selected {
+  color: #232323;
+  text-decoration: none;
+}
+
+article { 
+  line-height:1.8;
+  font-family: "open-sans";
+  font-size:20px;
+
+   p {
+    margin-bottom: 15px;
+    color: #777677;
+   }
+   strong {
+    font-weight: bold;
+    color: #444545;
+   }
+   blockquote {
+    font-size: 34px;
+    font-style: italic;
+    font-family: "adobe-caslon-pro";
+    text-align: center;
+    font-weight: 100;
+    color: #777677;
+    padding: 0px 25px;
+   }
+}
+.point {
+  width: 22px; 
+  margin: 25px auto;
+  display: block;
+
+}
+/*----------------------------------
+---CONTACT MOB -----------------------
+----------------------------------*/
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+#contact {
+  margin: 1000px 0px 0px 0px;
+}
+
+/*----------------------------------
+---WORK MOB -----------------------
+----------------------------------*/
+
+#worksamples {
+  background: #dfe5e7;
+  margin: 1000px 0 0 0;
+}
+
+#worksamples-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#worksamples h2 {
+  padding: 80px 0px 5px 0px;
+}
+#worksamples p {
+  font-family: open-sans;
+  width: 85%;
+  color: #555;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 600px;
+}
+.ul-o-death {
+  margin: 50px 0 0 0;
+}
+.ul-o-death a {
+  width: 380px;
+  height: 250px;
+  display: block;
+  color: #fff;
+  font-family: adobe-caslon-pro;
+  font-size: 21px;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px auto;
+
+}
+/*-------------- TESTS ------------------- */ 
+
+.ul-o-death a h3 {
+  padding: 100px 0 20px 0;
+}
+a.slidehover .meta, a.slidehover-img .meta, a.hoverimg .meta,  {
+  display:none;
+}
+.overlay {
+  opacity: 1;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0)
+}
+a.hoverimg .overlay {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+a.hoverimg {
+  box-shadow: 0px 0px 0px #252b48;
+  top: 0;
+  position: relative;
+  -webkit-transition: box-shadow .3s linear, top .3s linear;
+  -moz-transition: box-shadow .3s linear, top .3s linear;
+
+}
+a.hoverimg:hover {
+  box-shadow: 0px 3px 3px #252b48;
+  top:-3px;
+  position:relative;
+  -webkit-transition: box-shadow .3s linear, top .3s linear;
+  -moz-transition: box-shadow .3s linear, top .3s linear;
+
+}
+
+a.hoverimg#george-kamel {
+  background: url(../img/gk.png) top center no-repeat;
+}
+a.hoverimg#george-kamel .overlay {
+  background: url(../img/gk-purple-text.png) top center no-repeat;
+}
+
+a.hoverimg#ipai {
+  background: url(../img/ipai.png) top center no-repeat;
+}
+a.hoverimg#ipai .overlay {
+  background: url(../img/ipai-purple-text.png) top center no-repeat;
+}
+
+a.hoverimg#highlands {
+  background: url(../img/highlands.png) top center no-repeat;
+}
+a.hoverimg#highlands .overlay {
+  background: url(../img/highlands-purple-text.png) top center no-repeat;
+}
+
+a.hoverimg#umobile {
+  background: url(../img/gk-plain.png) top center no-repeat;
+}
+a.hoverimg#umobile .overlay {
+  background: url(../img/gk-purple-text.png) top center no-repeat;
+}
+
+a.hoverimg#youversion {
+  background: url(../img/youversion.png) top center no-repeat;
+}
+a.hoverimg#youversion .overlay {
+  background: url(../img/youversion-purple-text.png) top center no-repeat;
+}
+
+a.hoverimg#internship {
+  background: url(../img/internship-letter.png) top center no-repeat;
+}
+a.hoverimg#internship .overlay {
+  background: url(../img/internship-letter-purple-text.png) top center no-repeat;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+@media screen and (min-width: 786px) {
+.overlay {
+  opacity: 0;
+}
+  h1 {
+    font-size: 34px;
+  }
+  ul#nav {
+    text-align:center;
+  }
+  ul#nav li {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+  }
+  .ul-o-death a {
+  width: 33%;
+  height: 250px;
+  float: left;
+  margin: 0;
+}
+a.hoverimg .overlay {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+#about {
+  padding: 100px 0px 0px 0px;
+  overflow:hidden;
+}
+.about_container {
+  width: 60%;
+}
+#viewport-container {
+  width: 60%;
+}
+#worksamples-container {
+  width: 90%;
+  margin: 0 auto;
+}}
+
+@media screen and (min-width: 1300px) {
+  .ul-o-death a {
+  width: 25%;
+  height: 250px;
+  float: left;
+  margin:0
+}
+#home {
+  margin: 12% auto 0 auto;
+  -webkit-transition: margin 2s linear;
+  -moz-transition: margin 4s linear;
+}
+}

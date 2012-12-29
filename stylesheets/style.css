@@ -1,0 +1,558 @@
+/* line 17, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../compass.app/Contents/Resources/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 6, ../sass/style.scss */
+body {
+  height: 100%;
+  background: #f8f8f8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 14, ../sass/style.scss */
+#home {
+  width: 50%;
+  margin: 15% auto 0 auto;
+}
+
+/* line 18, ../sass/style.scss */
+#home img {
+  margin: 0 auto;
+  width: 135px;
+  display: block;
+}
+
+/* line 23, ../sass/style.scss */
+h1 {
+  font-size: 21px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height: 1.4;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+/* line 31, ../sass/style.scss */
+h2 {
+  font-size: 42px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height: 1.4;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+/* line 39, ../sass/style.scss */
+ul#nav {
+  margin: 25px auto 0 auto;
+}
+
+/* line 43, ../sass/style.scss */
+ul#nav li {
+  line-height: 3em;
+  text-align: center;
+}
+
+/* line 48, ../sass/style.scss */
+ul#nav li a {
+  font-family: "adobe-caslon-pro";
+  font-size: 25px;
+  color: #535353;
+  text-decoration: none;
+}
+
+/* line 55, ../sass/style.scss */
+ul#nav li a:active {
+  top: 2px;
+  position: relative;
+}
+
+/* line 59, ../sass/style.scss */
+.divider {
+  height: 1px;
+  width: 30%;
+  margin: 5% auto 0 auto;
+  background: url(../img/divider.png);
+}
+
+/* line 66, ../sass/style.scss */
+#top, #bottom, #left, #right {
+  background: #cee2ad;
+  position: fixed;
+  z-index: 300;
+}
+
+/* line 71, ../sass/style.scss */
+#left, #right {
+  top: 0;
+  bottom: 0;
+  width: 15px;
+}
+
+/* line 75, ../sass/style.scss */
+#left {
+  left: 0;
+}
+
+/* line 76, ../sass/style.scss */
+#right {
+  right: 0;
+}
+
+/* line 78, ../sass/style.scss */
+#top, #bottom {
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+
+/* line 82, ../sass/style.scss */
+#top {
+  top: 0;
+}
+
+/* line 83, ../sass/style.scss */
+#bottom {
+  bottom: 0;
+}
+
+/*----------------------------------
+---ABOUT MOB -----------------------
+----------------------------------*/
+/* line 89, ../sass/style.scss */
+#viewport {
+  position: relative;
+  display: block;
+  min-height: 500px;
+}
+
+/* line 94, ../sass/style.scss */
+#viewport-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* line 99, ../sass/style.scss */
+.recently, .values, .skills {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+}
+
+/* line 104, ../sass/style.scss */
+.values, .skills {
+  left: 2000px;
+}
+
+/* line 108, ../sass/style.scss */
+#about {
+  margin: 1000px auto 0px auto;
+  padding: 50px 0px 0px 0px;
+}
+
+/* line 112, ../sass/style.scss */
+.about_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 116, ../sass/style.scss */
+#about h1 {
+  font-size: 42px;
+}
+
+/* line 120, ../sass/style.scss */
+#about #subnav {
+  margin: 15px auto 25px auto;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 126, ../sass/style.scss */
+#about #subnav li {
+  display: inline;
+  text-align: center;
+}
+
+/* line 130, ../sass/style.scss */
+#about #subnav li a {
+  font-family: "adobe-caslon-pro";
+  color: #93b957;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0px 15px 0px 15px;
+  padding: 185px 0 0 0;
+}
+
+/* line 140, ../sass/style.scss */
+#about #subnav li a#abvalues {
+  margin: 0px 19px 0px 15px;
+}
+
+/* line 144, ../sass/style.scss */
+#about #subnav li a.selected {
+  color: #232323;
+  text-decoration: none;
+}
+
+/* line 149, ../sass/style.scss */
+article {
+  line-height: 1.8;
+  font-family: "open-sans";
+  font-size: 20px;
+}
+/* line 154, ../sass/style.scss */
+article p {
+  margin-bottom: 15px;
+  color: #777677;
+}
+/* line 158, ../sass/style.scss */
+article strong {
+  font-weight: bold;
+  color: #444545;
+}
+/* line 162, ../sass/style.scss */
+article blockquote {
+  font-size: 34px;
+  font-style: italic;
+  font-family: "adobe-caslon-pro";
+  text-align: center;
+  font-weight: 100;
+  color: #777677;
+  padding: 0px 25px;
+}
+
+/* line 172, ../sass/style.scss */
+.point {
+  width: 22px;
+  margin: 25px auto;
+  display: block;
+}
+
+/*----------------------------------
+---CONTACT MOB -----------------------
+----------------------------------*/
+/* For modern browsers */
+/* line 183, ../sass/style.scss */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 187, ../sass/style.scss */
+.cf:after {
+  clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+/* line 191, ../sass/style.scss */
+.cf {
+  zoom: 1;
+}
+
+/* line 195, ../sass/style.scss */
+#contact {
+  margin: 1000px 0px 0px 0px;
+}
+
+/*----------------------------------
+---WORK MOB -----------------------
+----------------------------------*/
+/* line 203, ../sass/style.scss */
+#worksamples {
+  background: #dfe5e7;
+  margin: 1000px 0 0 0;
+}
+
+/* line 208, ../sass/style.scss */
+#worksamples-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 213, ../sass/style.scss */
+#worksamples h2 {
+  padding: 80px 0px 5px 0px;
+}
+
+/* line 216, ../sass/style.scss */
+#worksamples p {
+  font-family: open-sans;
+  width: 85%;
+  color: #555;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+/* line 225, ../sass/style.scss */
+.ul-o-death {
+  margin: 50px 0 0 0;
+}
+
+/* line 228, ../sass/style.scss */
+.ul-o-death a {
+  width: 380px;
+  height: 250px;
+  display: block;
+  color: #fff;
+  font-family: adobe-caslon-pro;
+  font-size: 21px;
+  text-decoration: none;
+  text-align: center;
+  margin: 15px auto;
+}
+
+/*-------------- TESTS ------------------- */
+/* line 242, ../sass/style.scss */
+.ul-o-death a h3 {
+  padding: 100px 0 20px 0;
+}
+
+/* line 245, ../sass/style.scss */
+a.slidehover .meta, a.slidehover-img .meta, a.hoverimg .meta {
+  display: none;
+}
+
+/* line 248, ../sass/style.scss */
+.overlay {
+  opacity: 1;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* line 252, ../sass/style.scss */
+a.hoverimg .overlay {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+/* line 257, ../sass/style.scss */
+a.hoverimg {
+  box-shadow: 0px 0px 0px #252b48;
+  top: 0;
+  position: relative;
+  -webkit-transition: box-shadow .3s linear, top .3s linear;
+  -moz-transition: box-shadow .3s linear, top .3s linear;
+}
+
+/* line 265, ../sass/style.scss */
+a.hoverimg:hover {
+  box-shadow: 0px 3px 3px #252b48;
+  top: -3px;
+  position: relative;
+  -webkit-transition: box-shadow .3s linear, top .3s linear;
+  -moz-transition: box-shadow .3s linear, top .3s linear;
+}
+
+/* line 274, ../sass/style.scss */
+a.hoverimg#george-kamel {
+  background: url(../img/gk.png) top center no-repeat;
+}
+
+/* line 277, ../sass/style.scss */
+a.hoverimg#george-kamel .overlay {
+  background: url(../img/gk-purple-text.png) top center no-repeat;
+}
+
+/* line 281, ../sass/style.scss */
+a.hoverimg#ipai {
+  background: url(../img/ipai.png) top center no-repeat;
+}
+
+/* line 284, ../sass/style.scss */
+a.hoverimg#ipai .overlay {
+  background: url(../img/ipai-purple-text.png) top center no-repeat;
+}
+
+/* line 288, ../sass/style.scss */
+a.hoverimg#highlands {
+  background: url(../img/highlands.png) top center no-repeat;
+}
+
+/* line 291, ../sass/style.scss */
+a.hoverimg#highlands .overlay {
+  background: url(../img/highlands-purple-text.png) top center no-repeat;
+}
+
+/* line 295, ../sass/style.scss */
+a.hoverimg#umobile {
+  background: url(../img/gk-plain.png) top center no-repeat;
+}
+
+/* line 298, ../sass/style.scss */
+a.hoverimg#umobile .overlay {
+  background: url(../img/gk-purple-text.png) top center no-repeat;
+}
+
+/* line 302, ../sass/style.scss */
+a.hoverimg#youversion {
+  background: url(../img/youversion.png) top center no-repeat;
+}
+
+/* line 305, ../sass/style.scss */
+a.hoverimg#youversion .overlay {
+  background: url(../img/youversion-purple-text.png) top center no-repeat;
+}
+
+/* line 309, ../sass/style.scss */
+a.hoverimg#internship {
+  background: url(../img/internship-letter.png) top center no-repeat;
+}
+
+/* line 312, ../sass/style.scss */
+a.hoverimg#internship .overlay {
+  background: url(../img/internship-letter-purple-text.png) top center no-repeat;
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+@media screen and (min-width: 786px) {
+  /* line 332, ../sass/style.scss */
+  .overlay {
+    opacity: 0;
+  }
+
+  /* line 335, ../sass/style.scss */
+  h1 {
+    font-size: 34px;
+  }
+
+  /* line 338, ../sass/style.scss */
+  ul#nav {
+    text-align: center;
+  }
+
+  /* line 341, ../sass/style.scss */
+  ul#nav li {
+    display: inline;
+    margin-right: 25px;
+    margin-left: 25px;
+    text-align: center;
+  }
+
+  /* line 347, ../sass/style.scss */
+  .ul-o-death a {
+    width: 33%;
+    height: 250px;
+    float: left;
+    margin: 0;
+  }
+
+  /* line 353, ../sass/style.scss */
+  a.hoverimg .overlay {
+    width: 100%;
+    height: 250px;
+    display: block;
+  }
+
+  /* line 358, ../sass/style.scss */
+  #about {
+    padding: 100px 0px 0px 0px;
+    overflow: hidden;
+  }
+
+  /* line 362, ../sass/style.scss */
+  .about_container {
+    width: 60%;
+  }
+
+  /* line 365, ../sass/style.scss */
+  #viewport-container {
+    width: 60%;
+  }
+
+  /* line 368, ../sass/style.scss */
+  #worksamples-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1300px) {
+  /* line 374, ../sass/style.scss */
+  .ul-o-death a {
+    width: 25%;
+    height: 250px;
+    float: left;
+    margin: 0;
+  }
+
+  /* line 380, ../sass/style.scss */
+  #home {
+    margin: 12% auto 0 auto;
+    -webkit-transition: margin 2s linear;
+    -moz-transition: margin 4s linear;
+  }
+}
