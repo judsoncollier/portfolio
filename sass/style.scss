@@ -15,10 +15,73 @@ $grey: #535353;
   width:50%;
   margin: 15% auto 0 auto;
 }
+
+#header {
+  margin: 0px auto 0 auto;
+  position:relative;
+  top: -30px;
+  text-align:center;
+
+}
+
+#header a {
+  font-size: 24px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height:1.4;
+  margin: 0px 19% 0px 18%;
+  text-decoration:none;
+}
+
+#header img {
+  width: 98px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 60px;
+}
+
 #home img {
   margin: 0 auto;
   width: 135px;
   display: block;
+}
+
+#feature {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+#feature img {
+  width: 94%;
+  margin: 0px 3% 0 3%;
+  z-index:-1;
+  display: block;
+}
+.cell {
+  position: absolute;
+  width: 100%;
+  bottom: 38%;
+}
+
+#feature h2 {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+#feature h3 {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size:16px;
+}
+#post #intro {
+  width: 65%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 24px;
 }
 h1 {
   font-size: 21px;
@@ -36,13 +99,25 @@ h2 {
   margin: 20px 0 0 0;
   text-align: center;
 }
+
+.sticky {
+  position: fixed; 
+  top: -10px; 
+  padding: 10px 0px 0px 0px;
+  z-index: 200;
+}
+
 ul#nav {
-  margin: 25px auto 0 auto;
+  margin-top: 25px;
+  left: 0;
+  right: 0;
 }
 
 ul#nav li {
   line-height: 3em;
   text-align: center;
+  top: 0;
+  right: 0;
 }
 
 ul#nav li a {
@@ -213,7 +288,7 @@ article {
 #worksamples h2 {
   padding: 80px 0px 5px 0px;
 }
-#worksamples p {
+#worksamples p, #contact p {
   font-family: open-sans;
   width: 85%;
   color: #555;
@@ -236,6 +311,29 @@ article {
   text-align: center;
   margin: 15px auto;
 
+}
+
+/*----------WUFOO------------*/
+#contact {
+  height: 750px;
+  padding-top:350px;
+}
+#contact h3 a{
+  color: #e65c5c;
+  font-size: 56px;
+  text-align: center;
+  font-family: adobe-caslon-pro;
+  margin: 75px 0px;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  position: relative;
+
+}
+
+#contact h3 a:hover{
+  top: 2px;
+  position: relative;
 }
 /*-------------- TESTS ------------------- */ 
 
@@ -317,7 +415,9 @@ a.hoverimg#internship .overlay {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 
-  
+  .overlay {
+    opacity: 1;
+  }
 
 }
 
@@ -325,10 +425,43 @@ and (max-device-width : 480px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
-/* Styles */
+
+  .overlay {
+    opacity: 1;
+  }
+
 }
 
 @media screen and (min-width: 786px) {
+.cell {
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+}
+
+#feature h2 {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 42px;
+}
+#feature h3 {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size:21px;
+}
+
+
+#header a {
+  font-size: 24px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height:1.4;
+  margin: 0px 100px 0px 100px;
+  text-decoration:none;
+}
+
 .overlay {
   opacity: 0;
 }
@@ -368,7 +501,8 @@ a.hoverimg .overlay {
 #worksamples-container {
   width: 90%;
   margin: 0 auto;
-}}
+}
+}
 
 @media screen and (min-width: 1300px) {
   .ul-o-death a {
@@ -383,3 +517,5 @@ a.hoverimg .overlay {
   -moz-transition: margin 4s linear;
 }
 }
+
+@import "parallax";

@@ -81,14 +81,88 @@ body {
   margin: 15% auto 0 auto;
 }
 
-/* line 18, ../sass/style.scss */
+/* line 19, ../sass/style.scss */
+#header {
+  margin: 0px auto 0 auto;
+  position: relative;
+  top: -30px;
+  text-align: center;
+}
+
+/* line 27, ../sass/style.scss */
+#header a {
+  font-size: 24px;
+  font-family: "adobe-caslon-pro";
+  color: #535353;
+  line-height: 1.4;
+  margin: 0px 19% 0px 18%;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/style.scss */
+#header img {
+  width: 98px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 60px;
+}
+
+/* line 44, ../sass/style.scss */
 #home img {
   margin: 0 auto;
   width: 135px;
   display: block;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
+#feature {
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 56, ../sass/style.scss */
+#feature img {
+  width: 94%;
+  margin: 0px 3% 0 3%;
+  z-index: -1;
+  display: block;
+}
+
+/* line 62, ../sass/style.scss */
+.cell {
+  position: absolute;
+  width: 100%;
+  bottom: 38%;
+}
+
+/* line 68, ../sass/style.scss */
+#feature h2 {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* line 74, ../sass/style.scss */
+#feature h3 {
+  z-index: 100;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* line 80, ../sass/style.scss */
+#post #intro {
+  width: 65%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 24px;
+}
+
+/* line 86, ../sass/style.scss */
 h1 {
   font-size: 21px;
   font-family: "adobe-caslon-pro";
@@ -98,7 +172,7 @@ h1 {
   text-align: center;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 h2 {
   font-size: 42px;
   font-family: "adobe-caslon-pro";
@@ -108,18 +182,30 @@ h2 {
   text-align: center;
 }
 
-/* line 39, ../sass/style.scss */
-ul#nav {
-  margin: 25px auto 0 auto;
+/* line 103, ../sass/style.scss */
+.sticky {
+  position: fixed;
+  top: -10px;
+  padding: 10px 0px 0px 0px;
+  z-index: 200;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
+ul#nav {
+  margin-top: 25px;
+  left: 0;
+  right: 0;
+}
+
+/* line 116, ../sass/style.scss */
 ul#nav li {
   line-height: 3em;
   text-align: center;
+  top: 0;
+  right: 0;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 ul#nav li a {
   font-family: "adobe-caslon-pro";
   font-size: 25px;
@@ -127,13 +213,13 @@ ul#nav li a {
   text-decoration: none;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 ul#nav li a:active {
   top: 2px;
   position: relative;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .divider {
   height: 1px;
   width: 30%;
@@ -141,43 +227,43 @@ ul#nav li a:active {
   background: url(../img/divider.png);
 }
 
-/* line 66, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 #top, #bottom, #left, #right {
   background: #cee2ad;
   position: fixed;
   z-index: 300;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 #left, #right {
   top: 0;
   bottom: 0;
   width: 15px;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 #left {
   left: 0;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 #right {
   right: 0;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 #top, #bottom {
   left: 0;
   right: 0;
   height: 15px;
 }
 
-/* line 82, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 #top {
   top: 0;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 158, ../sass/style.scss */
 #bottom {
   bottom: 0;
 }
@@ -185,63 +271,63 @@ ul#nav li a:active {
 /*----------------------------------
 ---ABOUT MOB -----------------------
 ----------------------------------*/
-/* line 89, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 #viewport {
   position: relative;
   display: block;
   min-height: 500px;
 }
 
-/* line 94, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 #viewport-container {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .recently, .values, .skills {
   position: absolute;
   top: 1px;
   width: 100%;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .values, .skills {
   left: 2000px;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 #about {
   margin: 1000px auto 0px auto;
   padding: 50px 0px 0px 0px;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .about_container {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 #about h1 {
   font-size: 42px;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 #about #subnav {
   margin: 15px auto 25px auto;
   width: 100%;
   text-align: center;
 }
 
-/* line 126, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 #about #subnav li {
   display: inline;
   text-align: center;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 #about #subnav li a {
   font-family: "adobe-caslon-pro";
   color: #93b957;
@@ -252,34 +338,34 @@ ul#nav li a:active {
   padding: 185px 0 0 0;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 #about #subnav li a#abvalues {
   margin: 0px 19px 0px 15px;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 #about #subnav li a.selected {
   color: #232323;
   text-decoration: none;
 }
 
-/* line 149, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 article {
   line-height: 1.8;
   font-family: "open-sans";
   font-size: 20px;
 }
-/* line 154, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 article p {
   margin-bottom: 15px;
   color: #777677;
 }
-/* line 158, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 article strong {
   font-weight: bold;
   color: #444545;
 }
-/* line 162, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 article blockquote {
   font-size: 34px;
   font-style: italic;
@@ -290,7 +376,7 @@ article blockquote {
   padding: 0px 25px;
 }
 
-/* line 172, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .point {
   width: 22px;
   margin: 25px auto;
@@ -301,25 +387,25 @@ article blockquote {
 ---CONTACT MOB -----------------------
 ----------------------------------*/
 /* For modern browsers */
-/* line 183, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .cf:before,
 .cf:after {
   content: "";
   display: table;
 }
 
-/* line 187, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 .cf:after {
   clear: both;
 }
 
 /* For IE 6/7 (trigger hasLayout) */
-/* line 191, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .cf {
   zoom: 1;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 #contact {
   margin: 1000px 0px 0px 0px;
 }
@@ -327,25 +413,25 @@ article blockquote {
 /*----------------------------------
 ---WORK MOB -----------------------
 ----------------------------------*/
-/* line 203, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 #worksamples {
   background: #dfe5e7;
   margin: 1000px 0 0 0;
 }
 
-/* line 208, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 #worksamples-container {
   width: 90%;
   margin: 0 auto;
 }
 
-/* line 213, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 #worksamples h2 {
   padding: 80px 0px 5px 0px;
 }
 
-/* line 216, ../sass/style.scss */
-#worksamples p {
+/* line 291, ../sass/style.scss */
+#worksamples p, #contact p {
   font-family: open-sans;
   width: 85%;
   color: #555;
@@ -355,12 +441,12 @@ article blockquote {
   max-width: 600px;
 }
 
-/* line 225, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .ul-o-death {
   margin: 50px 0 0 0;
 }
 
-/* line 228, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .ul-o-death a {
   width: 380px;
   height: 250px;
@@ -373,31 +459,57 @@ article blockquote {
   margin: 15px auto;
 }
 
+/*----------WUFOO------------*/
+/* line 317, ../sass/style.scss */
+#contact {
+  height: 750px;
+  padding-top: 350px;
+}
+
+/* line 321, ../sass/style.scss */
+#contact h3 a {
+  color: #e65c5c;
+  font-size: 56px;
+  text-align: center;
+  font-family: adobe-caslon-pro;
+  margin: 75px 0px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+/* line 334, ../sass/style.scss */
+#contact h3 a:hover {
+  top: 2px;
+  position: relative;
+}
+
 /*-------------- TESTS ------------------- */
-/* line 242, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .ul-o-death a h3 {
   padding: 100px 0 20px 0;
 }
 
-/* line 245, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 a.slidehover .meta, a.slidehover-img .meta, a.hoverimg .meta {
   display: none;
 }
 
-/* line 248, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .overlay {
   opacity: 1;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
-/* line 252, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 a.hoverimg .overlay {
   width: 100%;
   height: 250px;
   display: block;
 }
 
-/* line 257, ../sass/style.scss */
+/* line 355, ../sass/style.scss */
 a.hoverimg {
   box-shadow: 0px 0px 0px #252b48;
   top: 0;
@@ -406,7 +518,7 @@ a.hoverimg {
   -moz-transition: box-shadow .3s linear, top .3s linear;
 }
 
-/* line 265, ../sass/style.scss */
+/* line 363, ../sass/style.scss */
 a.hoverimg:hover {
   box-shadow: 0px 3px 3px #252b48;
   top: -3px;
@@ -415,87 +527,129 @@ a.hoverimg:hover {
   -moz-transition: box-shadow .3s linear, top .3s linear;
 }
 
-/* line 274, ../sass/style.scss */
+/* line 372, ../sass/style.scss */
 a.hoverimg#george-kamel {
   background: url(../img/gk.png) top center no-repeat;
 }
 
-/* line 277, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 a.hoverimg#george-kamel .overlay {
   background: url(../img/gk-purple-text.png) top center no-repeat;
 }
 
-/* line 281, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 a.hoverimg#ipai {
   background: url(../img/ipai.png) top center no-repeat;
 }
 
-/* line 284, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
 a.hoverimg#ipai .overlay {
   background: url(../img/ipai-purple-text.png) top center no-repeat;
 }
 
-/* line 288, ../sass/style.scss */
+/* line 386, ../sass/style.scss */
 a.hoverimg#highlands {
   background: url(../img/highlands.png) top center no-repeat;
 }
 
-/* line 291, ../sass/style.scss */
+/* line 389, ../sass/style.scss */
 a.hoverimg#highlands .overlay {
   background: url(../img/highlands-purple-text.png) top center no-repeat;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 a.hoverimg#umobile {
   background: url(../img/gk-plain.png) top center no-repeat;
 }
 
-/* line 298, ../sass/style.scss */
+/* line 396, ../sass/style.scss */
 a.hoverimg#umobile .overlay {
   background: url(../img/gk-purple-text.png) top center no-repeat;
 }
 
-/* line 302, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 a.hoverimg#youversion {
   background: url(../img/youversion.png) top center no-repeat;
 }
 
-/* line 305, ../sass/style.scss */
+/* line 403, ../sass/style.scss */
 a.hoverimg#youversion .overlay {
   background: url(../img/youversion-purple-text.png) top center no-repeat;
 }
 
-/* line 309, ../sass/style.scss */
+/* line 407, ../sass/style.scss */
 a.hoverimg#internship {
   background: url(../img/internship-letter.png) top center no-repeat;
 }
 
-/* line 312, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 a.hoverimg#internship .overlay {
   background: url(../img/internship-letter-purple-text.png) top center no-repeat;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 418, ../sass/style.scss */
+  .overlay {
+    opacity: 1;
+  }
+}
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
+  /* line 429, ../sass/style.scss */
+  .overlay {
+    opacity: 1;
+  }
 }
 @media screen and (min-width: 786px) {
-  /* line 332, ../sass/style.scss */
+  /* line 436, ../sass/style.scss */
+  .cell {
+    position: absolute;
+    width: 100%;
+    bottom: 40%;
+  }
+
+  /* line 442, ../sass/style.scss */
+  #feature h2 {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    font-size: 42px;
+  }
+
+  /* line 448, ../sass/style.scss */
+  #feature h3 {
+    z-index: 100;
+    color: white;
+    text-align: center;
+    font-size: 21px;
+  }
+
+  /* line 456, ../sass/style.scss */
+  #header a {
+    font-size: 24px;
+    font-family: "adobe-caslon-pro";
+    color: #535353;
+    line-height: 1.4;
+    margin: 0px 100px 0px 100px;
+    text-decoration: none;
+  }
+
+  /* line 465, ../sass/style.scss */
   .overlay {
     opacity: 0;
   }
 
-  /* line 335, ../sass/style.scss */
+  /* line 468, ../sass/style.scss */
   h1 {
     font-size: 34px;
   }
 
-  /* line 338, ../sass/style.scss */
+  /* line 471, ../sass/style.scss */
   ul#nav {
     text-align: center;
   }
 
-  /* line 341, ../sass/style.scss */
+  /* line 474, ../sass/style.scss */
   ul#nav li {
     display: inline;
     margin-right: 25px;
@@ -503,7 +657,7 @@ a.hoverimg#internship .overlay {
     text-align: center;
   }
 
-  /* line 347, ../sass/style.scss */
+  /* line 480, ../sass/style.scss */
   .ul-o-death a {
     width: 33%;
     height: 250px;
@@ -511,37 +665,37 @@ a.hoverimg#internship .overlay {
     margin: 0;
   }
 
-  /* line 353, ../sass/style.scss */
+  /* line 486, ../sass/style.scss */
   a.hoverimg .overlay {
     width: 100%;
     height: 250px;
     display: block;
   }
 
-  /* line 358, ../sass/style.scss */
+  /* line 491, ../sass/style.scss */
   #about {
     padding: 100px 0px 0px 0px;
     overflow: hidden;
   }
 
-  /* line 362, ../sass/style.scss */
+  /* line 495, ../sass/style.scss */
   .about_container {
     width: 60%;
   }
 
-  /* line 365, ../sass/style.scss */
+  /* line 498, ../sass/style.scss */
   #viewport-container {
     width: 60%;
   }
 
-  /* line 368, ../sass/style.scss */
+  /* line 501, ../sass/style.scss */
   #worksamples-container {
     width: 90%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1300px) {
-  /* line 374, ../sass/style.scss */
+  /* line 508, ../sass/style.scss */
   .ul-o-death a {
     width: 25%;
     height: 250px;
@@ -549,10 +703,54 @@ a.hoverimg#internship .overlay {
     margin: 0;
   }
 
-  /* line 380, ../sass/style.scss */
+  /* line 514, ../sass/style.scss */
   #home {
     margin: 12% auto 0 auto;
     -webkit-transition: margin 2s linear;
     -moz-transition: margin 4s linear;
   }
+}
+/* line 5, ../sass/parallax.scss */
+#parallax_container {
+  position: relative;
+  top: -100px;
+  z-index: -2;
+  opacity: .9;
+  padding: 1px;
+}
+
+/* line 12, ../sass/parallax.scss */
+#parallax_overlay {
+  background: url(../img/fade.png) repeat-x;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 0px;
+  padding: 1px;
+}
+
+/* line 20, ../sass/parallax.scss */
+#parallax {
+  background: url(../img/umobile/posters/1_seminary.jpg), url(../img/umobile/posters/14_spring.jpg), url(../img/umobile/posters/2_mutemath.jpg), url(../img/umobile/posters/3_music.jpg), url(../img/umobile/posters/4_phantom.jpg), url(../img/umobile/posters/5_xxi.jpg), url(../img/umobile/posters/6_pep.jpg), url(../img/umobile/posters/7_madness.jpg), url(../img/umobile/posters/8_tvf.jpg), url(../img/umobile/posters/9_monsters.jpg), url(../img/umobile/posters/10_iwomen.jpg), url(../img/umobile/posters/11_dubstep.jpg), url(../img/umobile/posters/12_xix.jpg), url(../img/umobile/posters/13_badgerbash.jpg), url(../img/umobile/posters/15_polankis.jpg), url(../img/umobile/posters/16_lori.jpg), url(../img/umobile/posters/17_anna.jpg), url(../img/umobile/posters/18_preston.jpg), url(../img/umobile/posters/19_dorminy.jpg);
+  background-size: 250px, 250px, 250px, 163px 250px, 114px 175px, 163px 250px, 114px 175px, 82px 125px, 195px 300px, 163px 250px, 114px 175px, 82px 125px, 195px 300px, 163px 250px, 114px 175px, 163px 250px, 114px 175px, 82px 125px, 195px 300px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  padding: 1px;
+}
+
+/* line 68, ../sass/parallax.scss */
+#posters {
+  margin: 450px 0 0 0;
+}
+
+/* line 71, ../sass/parallax.scss */
+#posters p {
+  width: 65%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 24px;
 }

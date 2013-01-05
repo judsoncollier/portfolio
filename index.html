@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="stylesheets/style.css">
 
     </head>
-    <body>
+    <body id="homepage">
         <div id="left"></div>
         <div id="right"></div>
         <div id="top"></div>
@@ -23,11 +23,13 @@
             <h1>Judson Collier is a designer and maker 
     of things in Nashville, Tennessee.</h1>
             <div class="divider"></div>
-            <ul id="nav"> 
-                <li> <a href="#about" id="about-link">About</a></li>
-                <li> <a href="#worksamples" id="work">Work Samples</a></li>
-                <li> <a href="#contact">Contact</a></li>
-            </ul>
+            <div id="nav_container">
+                <ul id="nav"> 
+                    <li> <a href="#about" id="about-link">About</a></li>
+                    <li> <a href="#worksamples" id="work">Work Samples</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+        </div>
         </div>
         <div id="about">
             <div class="about_container">
@@ -98,13 +100,16 @@
 
         </div>
         <div id="contact">
-            <h1>Contact</h1>
-           
+            <p>I'm always looking for new adventures</p><br/>
+            <h3><a href="mailto:judson@judsoncollier.com">judson@judsoncollier.com</a></h3>
         </div>
         <script type="text/javascript" src="//use.typekit.net/suq6pkl.js"></script>
         <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script src="js/boxshadow.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/color.js"></script>
+        <script src="js/viewport.js"></script>
 
         <script src="js/main.js"></script>
 

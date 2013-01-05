@@ -1,0 +1,44 @@
+/* line 5, ../sass/parallax.scss */
+#parallax_container {
+  position: relative;
+  top: -100px;
+  z-index: -2;
+  opacity: .9;
+  padding: 1px;
+}
+
+/* line 12, ../sass/parallax.scss */
+#parallax_overlay {
+  background: url(../img/fade.png) repeat-x;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 0px;
+  padding: 1px;
+}
+
+/* line 20, ../sass/parallax.scss */
+#parallax {
+  background: url(../img/umobile/posters/1_seminary.jpg), url(../img/umobile/posters/14_spring.jpg), url(../img/umobile/posters/2_mutemath.jpg), url(../img/umobile/posters/3_music.jpg), url(../img/umobile/posters/4_phantom.jpg), url(../img/umobile/posters/5_xxi.jpg), url(../img/umobile/posters/6_pep.jpg), url(../img/umobile/posters/7_madness.jpg), url(../img/umobile/posters/8_tvf.jpg), url(../img/umobile/posters/9_monsters.jpg), url(../img/umobile/posters/10_iwomen.jpg), url(../img/umobile/posters/11_dubstep.jpg), url(../img/umobile/posters/12_xix.jpg), url(../img/umobile/posters/13_badgerbash.jpg), url(../img/umobile/posters/15_polankis.jpg), url(../img/umobile/posters/16_lori.jpg), url(../img/umobile/posters/17_anna.jpg), url(../img/umobile/posters/18_preston.jpg), url(../img/umobile/posters/19_dorminy.jpg);
+  background-size: 250px, 250px, 250px, 163px 250px, 114px 175px, 163px 250px, 114px 175px, 82px 125px, 195px 300px, 163px 250px, 114px 175px, 82px 125px, 195px 300px, 163px 250px, 114px 175px, 163px 250px, 114px 175px, 82px 125px, 195px 300px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 680px;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  padding: 1px;
+}
+
+/* line 68, ../sass/parallax.scss */
+#posters {
+  margin: 450px 0 0 0;
+}
+
+/* line 71, ../sass/parallax.scss */
+#posters p {
+  width: 65%;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 24px;
+}
