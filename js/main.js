@@ -9,12 +9,16 @@ $(document).ready(function() {
 			scrollTop: $("#worksamples").offset().top - 95
 		}, 2000);
 	})
-	$('#nav #contact').click(function(){
+	$('#nav #contact-link').click(function(){
 		$('html, body').animate({
 			scrollTop: $("#contact").offset().top - 10
 		}, 2000);
 	})
-
+	$('.top').click(function(){
+		$('html, body').animate({
+			scrollTop: $('#image').offset().top -200
+		}, 2000);
+	})
 	var removeAllthethings = function() {
 		$('.recently, .values, .skills').fadeOut(); 
 	}
@@ -85,8 +89,11 @@ $(document).ready(function() {
 		$('#nav_container').waypoint( function(direction) {
 			if (direction ==='down'){
 				nav.toggleClass('sticky').animate({ backgroundColor: "rgba(255,255,255,.9)", boxShadow: "0px 3px 5px rgba(0,0,0,.1)", }, "400");
+				$('.top').addClass('display');
 			} else {
 				nav.toggleClass('sticky').animate({ backgroundColor: "transparent", boxShadow: "0px 3px 5px rgba(0,0,0,.0)" }, "fast");
+				$('.top').removeClass('display');
+
 			}
 		});
 	});
@@ -119,8 +126,8 @@ $(document).ready(function() {
 
 	function move() {
 		var pos = $(window).scrollTop();
+		if (screen.width > 960) {
 		if($('.parallax').hasClass("inview")){
-			console.log('hi')
 			//call the newPos function and change the background position
 			$first.css({'backgroundPosition': newPos(75, 5000, -pos, 100, .3) + ", " + //sem
 					newPos(51, 150, -pos, 5, 0.1) + ", " + //spring formal
@@ -142,7 +149,7 @@ $(document).ready(function() {
 					newPos(91, -0, -pos, 0, 0.3) + ", " + // preston
 					newPos(9, -1800, pos, 0, 0.2)}); //dorminy 
 		}
-	}
+	}}
 	$(window).resize(function(){
 	    move();
 	    RepositionNav();

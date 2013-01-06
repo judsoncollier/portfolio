@@ -106,7 +106,19 @@ h2 {
   padding: 10px 0px 0px 0px;
   z-index: 200;
 }
-
+.top {
+  background: url('../img/top.png') no-repeat;
+  text-indent: -3000px;
+  width:26px;
+  height:26px;
+  display: none;
+  position: absolute;
+  left: 35px;
+  top: 15px;
+}
+.top.display {
+  display: block;
+}
 ul#nav {
   margin-top: 25px;
   left: 0;
@@ -266,7 +278,9 @@ article {
 .cf {
     zoom:1;
 }
-
+.amp {
+  font-style: italic;
+}
 #contact {
   margin: 1000px 0px 0px 0px;
 }
@@ -274,7 +288,10 @@ article {
 /*----------------------------------
 ---WORK MOB -----------------------
 ----------------------------------*/
+.lightblue {
+  background: #dfe5e7;
 
+}
 #worksamples {
   background: #dfe5e7;
   margin: 1000px 0 0 0;

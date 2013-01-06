@@ -42,3 +42,21 @@
   margin: 50px auto;
   font-size: 24px;
 }
+
+/* line 78, ../sass/parallax.scss */
+#video_container {
+  width: 100%;
+}
+
+/* line 81, ../sass/parallax.scss */
+#video {
+  padding: 50px 0px 0px 0px;
+}
+
+/* line 84, ../sass/parallax.scss */
+#video p {
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
